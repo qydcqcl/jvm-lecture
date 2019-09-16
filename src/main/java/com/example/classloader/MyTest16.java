@@ -51,7 +51,7 @@ public class MyTest16 extends ClassLoader {
         ByteArrayOutputStream baos = null;
 
         try {
-//            name = name.replace(".", "\\");
+            name = name.replace(".", "\\");
             is = new FileInputStream(new File(this.path + name + this.fileExtension));
             baos = new ByteArrayOutputStream();
 
