@@ -20,6 +20,10 @@ public class MyTest16 extends ClassLoader {
         this.classLoaderName = classLoaderName;
     }
 
+    public MyTest16(ClassLoader parent){
+        super(parent);
+    }
+
     public MyTest16(ClassLoader parent, String classLoaderName) {
         // 显示的指定该类加载器的父加载器
         super(parent);
